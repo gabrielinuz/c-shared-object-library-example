@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1425071132 source:/home/gabriel/Desarrollo/c/c-shared-object-library-example/main.c
+	<windows.h>
+	"dlfcn.h"
+	<stdio.h>
+	<stdlib.h>
+
+1424985845 source:/home/gabriel/Desarrollo/c/c-shared-object-library-example/SharedObjectLibraryLoader.cpp
+	"SharedObjectLibraryLoader.h"
+
+1424986733 /home/gabriel/Desarrollo/c/c-shared-object-library-example/SharedObjectLibraryLoader.h
+	<stdbool.h>
+	"dlfcn.h"
+
+1405107547 /home/gabriel/Desarrollo/c/c-shared-object-library-example/dlfcn.h
+	<features.h>
+	<stddef.h>
+	<bits/dlfcn.h>
+
+1425056284 source:/home/gabriel/Desarrollo/c/c-shared-object-library-example/SharedObjectLibraryLoader.c
+	"SharedObjectLibraryLoader.h"
+

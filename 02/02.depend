@@ -1,0 +1,4 @@
+# depslib dependency file v1.0
+1425055820 source:/home/gabriel/Desarrollo/c/c-shared-object-library-example/02/main.c
+	<stdio.h>
+
