@@ -20,3 +20,14 @@
 1425056284 source:/home/gabriel/Desarrollo/c/c-shared-object-library-example/SharedObjectLibraryLoader.c
 	"SharedObjectLibraryLoader.h"
 
+1428706531 source:/home/gabriel/develop/c/c-shared-object-library-example/main.c
+	"dlfcn.h"
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+
+1426772107 /home/gabriel/develop/c/c-shared-object-library-example/dlfcn.h
+	<features.h>
+	<stddef.h>
+	<bits/dlfcn.h>
+

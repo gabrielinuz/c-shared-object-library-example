@@ -1,5 +1,5 @@
  /**
- *  Copyright 2015 Gabriel Nicolás González Ferreira <gabrielinuz@gmail.com> 
+ *  Copyright 2015 Gabriel Nicolás González Ferreira <gabrielinuz@gmail.com>
  *
  *  Permission is hereby granted, free of charge, to any person obtaining
  *  a copy of this software and associated documentation files (the
@@ -20,7 +20,7 @@
  *  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  *  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  **/
- 
+
 #ifdef __unix__
     #include "dlfcn.h"
     #define GET_METHOD dlsym
@@ -49,7 +49,7 @@ int main(int argc, char **argv)
 
     if(!handle)
     {
-        printf("Cannot open library: /n");
+        printf("Cannot open library:");
         return 1;
     }
 
