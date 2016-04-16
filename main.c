@@ -23,14 +23,14 @@
 
 #ifdef __unix__
     #include "dlfcn.h"
-    #define GET_METHOD dlsym
+    #define GET_FUNCTION dlsym
     #define OPEN_LIBRARY(X) dlopen(X, RTLD_NOW)
     #define LIBRARY_POINTER_TYPE void*
     #define CLOSE_LIBRARY dlclose
 
 #elif defined(_WIN32) || defined(WIN32)
     #include <windows.h>
-    #define GET_METHOD GetProcAddress
+    #define GET_FUNCTION GetProcAddress
     #define OPEN_LIBRARY(X) LoadLibrary((LPCSTR)X)
     #define LIBRARY_POINTER_TYPE HMODULE
     #define CLOSE_LIBRARY FreeLibrary
@@ -56,7 +56,7 @@ int main(int argc, char **argv)
     //"Loading symbol..."
     typedef void (*function_type)();
 
-    function_type greet = (function_type) GET_METHOD(handle, "greet");
+    function_type greet = (function_type) GET_FUNCTION(handle, "greet");
 
     if (!greet)
     {
